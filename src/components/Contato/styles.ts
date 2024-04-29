@@ -6,7 +6,7 @@ export const Card = styled.div`
   padding: 16px;
   margin-bottom: 16px;
   border-radius: 10px;
-  width: 300px;
+  width: 350px;
   display: grid;
   `
 
@@ -16,19 +16,29 @@ export const Titulo = styled.h3`
   padding: 4px 8px;
   `
 
-export const Nome = styled.span`
+export const Nome = styled.textarea`
 padding: 4px 8px;
 font-weight: bold;
-font-size: 10px;
+background-color: transparent;
+border: none;
+resize: none;
+
 `
 
-export const Telefone = styled.span``
+export const Telefone = styled.textarea`
+background-color: transparent;
+border: none;
+resize: none;
+font-weight: bold;
+font-size: 12px;
+`
 
-export const Email = styled.span``
-
-export const BarraAcoes = styled.div`
-  border-top: 1px solid rgba(0, 0, 0, 0.1)
-  padding-top: 16px;
+export const Email = styled.textarea`
+background-color: transparent;
+border: none;
+resize: none;
+font-weight: bold;
+font-size: 12px;
 `
 
 export const Botao = styled.button`
@@ -40,6 +50,7 @@ export const Botao = styled.button`
   cursor: pointer;
   border-radius: 8px;
   margin-right: 8px;
+  display: inline-block;
 `
 
 export const BotaoSalvar = styled(Botao)`
