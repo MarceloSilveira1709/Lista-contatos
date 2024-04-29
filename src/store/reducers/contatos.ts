@@ -9,21 +9,21 @@ const initialState : ContatosState = {
   itens: [
     {
       id: 1,
-      nome: 'marcelo',
-      telefone: '545454564',
-      email: 'dlsadsid@@@'
+      nome: 'Marcelo Silveira',
+      telefone: '519958049',
+      email: 'lelosilvera@hotmail.com'
     },
     {
       id: 2,
-      nome: 'marcelo',
+      nome: 'Cecilia Passos',
       telefone: '545454564',
-      email: 'dlsadsid@@@'
+      email: 'cecinha@hotmail.'
     },
     {
       id: 3,
-      nome: 'marcelo',
-      telefone: '545454564',
-      email: 'dlsadsid@@@'
+      nome: 'Natalia passos',
+      telefone: '5158466623',
+      email: 'teste@hotmail.com'
     }
   ]
 }

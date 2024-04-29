@@ -3,7 +3,7 @@ import * as S from '../Contato/styles'
 import { useDispatch } from 'react-redux'
 import { remover, editar,} from '../../store/reducers/contatos'
 import ContatoClass from '../../models/Tarefa'
-import { BotaoSalvar } from '../../styles'
+
 
 type Props = ContatoClass
 
@@ -36,15 +36,7 @@ const Contato = ({nome:nomeOriginal, telefone:telefoneOriginal, email:emailOrigi
       <S.Nome disabled={!estaEditando} value={nome} onChange={evento => setNome(evento.target.value)}>{nome}</S.Nome>
       <S.Telefone disabled={!estaEditando} value={telefone} onChange={evento => setTelefone(evento.target.value)}>{telefone}</S.Telefone>
       <S.Email disabled={!estaEditando} value={email} onChange={evento => setEmail(evento.target.value)}>{email}</S.Email>
-      <BotaoSalvar onClick={() =>{
-        dispatch(editar({nome,
-        telefone,
-        email,
-        id
-        })
-        )
-        setEstaEditando(true)
-        }}>Salvar</BotaoSalvar>
+
       <S.BotaoEditar onClick={() => setEstaEditando(true)}>Editar</S.BotaoEditar>
       <S.BotaoApagar onClick={() => dispatch(remover(id))}>Apagar</S.BotaoApagar>
     </S.Card>

@@ -4,7 +4,6 @@ import { Botao } from "../components/Contato/styles";
 
 const EstiloGlobal = createGlobalStyle`
   * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
@@ -23,6 +22,7 @@ padding: 0 40px
 `
 export const BotaoSalvar = styled(Botao)`
 background-color: ${variaveis.verde};
+padding-bottom: 5px;
 `
 
 export default EstiloGlobal

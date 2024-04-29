@@ -2,63 +2,67 @@ import styled from "styled-components";
 import variaveis from "../../styles/variaveis";
 
 export const Card = styled.div`
-  background-color: #3498db;
+  background-color: #5f27cd;
   padding: 16px;
   margin-bottom: 16px;
   border-radius: 10px;
   width: 350px;
-  display: grid;
+  align-items: center;
+  display:block;
   `
 
 export const Titulo = styled.h3`
   font-size: 18px;
   font-weight: bold;
   padding: 4px 8px;
+  color: #222f3e;
   `
 
 export const Nome = styled.textarea`
 padding: 4px 8px;
 font-weight: bold;
 background-color: transparent;
+color: #c8d6e5;
 border: none;
 resize: none;
 
 `
 
 export const Telefone = styled.textarea`
+padding: 4px 8px;
+font-weight: bold;
 background-color: transparent;
+color: #c8d6e5;
 border: none;
 resize: none;
-font-weight: bold;
-font-size: 12px;
 `
 
 export const Email = styled.textarea`
+padding: 4px 8px;
+font-weight: bold;
 background-color: transparent;
+color: #c8d6e5;
 border: none;
 resize: none;
-font-weight: bold;
-font-size: 12px;
 `
 
 export const Botao = styled.button`
   font-weight: bold;
   font-size: 12px;
   color: #fff;
-  padding: 8px 12px;
+  padding: 5px 8px;
   border: none;
   cursor: pointer;
   border-radius: 8px;
-  margin-right: 8px;
-  display: inline-block;
+  margin-bottom: 8px;
+  margin-left: 8px;
 `
 
-export const BotaoSalvar = styled(Botao)`
-background-color: ${variaveis.verde};
-`
+
 
 export const BotaoEditar = styled(Botao)`
 background-color: ${variaveis.laranja};
+margin-right: 10px;
 `
 
 export const BotaoApagar = styled(Botao)`

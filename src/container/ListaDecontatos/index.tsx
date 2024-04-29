@@ -9,7 +9,6 @@ const ListaDeContatos = () => {
 
   return (
     <MainContainer>
-    <p>2 tarefas marcadas</p>
     <ul>
       {itens.map((c) => (
       <li key={c.nome}>

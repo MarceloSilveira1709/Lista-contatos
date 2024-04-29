@@ -11,9 +11,9 @@ export const Circulo = styled(Link)`
   cursor: pointer;
   border-radius: 8px;
   margin-right: 8px;
-  background-color: blue;
+  background-color: #353b48;
   max-width: 35px;
   height: 35px;
   text-decoration: none;
-
+  margin-left: 130px;
 `
